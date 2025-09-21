@@ -1,0 +1,12 @@
+{
+  "DreamDustOnKillChanceData": {
+    "Chance": 1.00, 
+    "GainedAmount": 10
+  },
+  "SnowGemData": {
+    "RechargeTime": 5.0,
+    "Range": 10.0,
+    "ShootIntervalMax": 10.0,
+    "ShootIntervalMin": 0.1
+  }
+}

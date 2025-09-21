@@ -12,11 +12,12 @@ public static class WealthGemPro
 {
     static bool Prefix(Gem_R_Wealth __instance, EventInfoKill obj)
     {
-        UnityEngine.Debug.Log($"AddItemsPlugin.Instance.ConfigData.SnowGemData.RechargeTime: {AddItemsPlugin.Instance.ConfigData.SnowGemData.RechargeTime} ");
+        UnityEngine.Debug.Log($"EventInfoKill: {obj} ");
+        UnityEngine.Debug.Log($"EventInfoKill is null: {obj.victim} ");
 
         if (!(obj.victim is Monster victim))
             return false;
-        ++__instance.tempOwner.platinumCoin;
+
         Vector3 pos = victim.position;
         __instance.StartCoroutine(DropGoldRoutine());
 
