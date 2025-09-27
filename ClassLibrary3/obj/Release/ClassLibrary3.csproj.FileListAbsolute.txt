@@ -190,3 +190,9 @@ D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\System.Text.Json.xml
 D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\System.Threading.Tasks.Extensions.xml
 D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\System.ValueTuple.xml
 D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\Newtonsoft.Json.xml
+D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\Dew.UI.dll
+D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\Febucci.TextAnimator.Runtime.dll
+D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\Febucci.Attributes.Runtime.dll
+D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\Dew.UI.pdb
+D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\Febucci.TextAnimator.Runtime.pdb
+D:\code\workspace\ClassLibrary3\ClassLibrary3\bin\Release\Febucci.Attributes.Runtime.pdb

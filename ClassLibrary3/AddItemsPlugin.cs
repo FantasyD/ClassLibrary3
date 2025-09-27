@@ -12,6 +12,7 @@ using Epic.OnlineServices;
 using HarmonyLib;
 using Mirror;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using TriangleNet;
 
 [BepInPlugin("com.mygame.additems", "Add Custom Items", "1.0.0")]
@@ -71,28 +72,52 @@ public class AddItemsPlugin : BaseUnityPlugin
 
 public class ConfigData
 {
-    public DreamDustOnKillChanceData DreamDustOnKillChanceData { get; set; }
-    public SnowGemData SnowGemData { get; set; }
-    public RigidityGemData RigidityGemData { get; set; }
+   public DreamDustOnKillChanceData DreamDustOnKillChanceData { get; set; }
+   public SnowGemData SnowGemData { get; set; }
+   public RigidityGemData RigidityGemData { get; set; }
+   public AdventureGemData AdventureGemData { get; set; }
 }
 
 public class DreamDustOnKillChanceData
 {
-    public double Chance { get; set; }
-    public int GainedAmount { get; set; }
+   public double Chance { get; set; }
+   public int GainedAmount { get; set; }
 }
 
 public class SnowGemData
 {
-    public float RechargeTime = 5f;
-    public float Range = 5f;
-    public float ShootIntervalMax = 1.5f;
-    public float ShootIntervalMin = 0.2f;
+   public float RechargeTime = 5f;
+   public float Range = 5f;
+   public float ShootIntervalMax = 1.5f;
+   public float ShootIntervalMin = 0.2f;
 }
 public class RigidityGemData
 {
-    public float RechargeTime = 5f;
-    public float Range = 5f;
-    public float ShootIntervalMax = 1.5f;
-    public float ShootIntervalMin = 0.2f;
+   public float RechargeTime = 5f;
+   public float Range = 5f;
+   public float ShootIntervalMax = 1.5f;
+   public float ShootIntervalMin = 0.2f;
+}
+
+public class AdventureGemData
+{
+    // "GoldBaseValue": 17.0,
+    // "GoldAdFactor": 0.0,
+    // "GoldApFactor": 0.0,
+    // "GoldLvlFactor": 10.0,
+    // "UpgradeBaseValue": 17.0,
+    // "UpgradeAdFactor": 0.0,
+    // "UpgradeApFactor": 0.0,
+    // "UpgradeLvlFactor": 50.0
+    public float GoldBaseValue = 17f;
+    public float GoldAdFactor = 0f;
+    public float GoldApFactor = 0f;
+    public float GoldLvlFactor = 10f;
+    public float GoldScalingMultiplier = 1f;
+    public float UpgradeBaseValue = 10f;
+    public float UpgradeAdFactor = 0f;
+    public float UpgradeApFactor = 0f;
+    public float UpgradeLvlFactor = 50f;
+    public float UpgradeScalingMultiplier = 1f;
+
 }
